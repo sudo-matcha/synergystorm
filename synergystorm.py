@@ -25,7 +25,6 @@ parser = argparse.ArgumentParser(
 )
 parser.add_argument(
     "--version",
-    "-v",
     action="version",
     version=f"%(prog)s {version_number}",
     help="display the version number and exit",
