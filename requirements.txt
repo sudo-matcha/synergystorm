@@ -1,0 +1,5 @@
+inquirer==3.2.4
+pybetterloader==1.0.0
+Requests==2.31.0
+selenium==4.19.0
+selenium-wire
