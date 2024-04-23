@@ -45,7 +45,6 @@ parser.add_argument(
 parser.add_argument(
     "--show_webdriver",
     "-W",
-    nargs='?',
     action='store_true',
     help='Show Selenium Webdriver instance (removes \'--headless\' argument)',
 )
