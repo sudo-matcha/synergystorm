@@ -36,7 +36,7 @@ pip install -r requirements.txt
 ```bash
 sudo cp ./dist/synergystorm/synergystorm /usr/bin
 ```
-**...or use `install.sh`** (this method will always emulate all installation steps)
+**...or use `install.sh`** (this method will always emulate all installation steps needed after cloning)
 ```bash
 chmod +x ./install.sh && ./install.sh
 ```
