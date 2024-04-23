@@ -1,8 +1,8 @@
-####                      ####
-# \\\ SynergyStorm v.2.4 /// #
-# ///     written by:    /// #
-# \\\       mxtcha       \\\ #
-####                      ####
+####                        ####
+# \\\ SynergyStorm v.2.4.1 /// #
+# ///      written by:     /// #
+# \\\      sudo-matcha     \\\ #
+####                        ####
 
 
 from seleniumwire import webdriver
@@ -16,7 +16,7 @@ import argparse
 from time import sleep
 from shutil import get_terminal_size
 
-version_number = 2.4
+version_name = '2.4.1'
 ROOT = __file__.removesuffix('synergystorm.py')
 
 parser = argparse.ArgumentParser(
@@ -26,7 +26,7 @@ parser = argparse.ArgumentParser(
 parser.add_argument(
     "--version",
     action="version",
-    version=f"%(prog)s {version_number}",
+    version=f"%(prog)s {version_name}",
     help="display the version number and exit",
 )
 parser.add_argument(
@@ -42,6 +42,13 @@ parser.add_argument(
     type=str,
     help="Provide a password for authentication (required by -id)",
 )
+parser.add_argument(
+    "--show_webdriver",
+    "-W",
+    nargs='?',
+    action='store_true',
+    help='Show Selenium Webdriver instance (removes \'--headless\' argument)',
+)
 argv = parser.parse_args()
 # def exit_gracefully(exit_code: int) -> None:
 #     print('\x1b[?1049l]')
@@ -55,7 +62,7 @@ loader = Loader(
     quips=False,
 )
 loader.start()
-sleep(1)
+sleep(0.2)
 try:
     online_check = requests.get("https://www.example.com")
 except requests.exceptions.ConnectionError as e:
@@ -68,7 +75,8 @@ except requests.exceptions.ConnectionError as e:
 loader.stop()
 
 options = webdriver.ChromeOptions()
-options.add_argument("--headless")
+if not argv.show_webdriver:
+    options.add_argument("--headless")
 driver = webdriver.Chrome(options=options)
 
 
@@ -167,7 +175,7 @@ def print_splash() -> None:
                     print(f"{rgb_fg(255,90,90)}{char}", end="")
 
             if i == 9:
-                print(f"   \x1b[7m v{version_number} \x1b[0m", end="")
+                print(f"   \x1b[7m v{version_name} \x1b[0m", end="")
             print()
     else:
         with open(f"{ROOT}/splash_small", "r") as f:
@@ -181,7 +189,7 @@ def print_splash() -> None:
                     print(f"{rgb_fg(255,90,90)}{char}", end="")
 
             if i == 4:
-                print(f"   \x1b[7m v{version_number} \x1b[0m", end="")
+                print(f"   \x1b[7m v{version_name} \x1b[0m", end="")
             print()
 
 
