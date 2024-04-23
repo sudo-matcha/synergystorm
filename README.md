@@ -6,11 +6,11 @@ SynergyStorm is a command-line client designed to de-jank the SynergyVue user ex
 
 ## Installation
 
-### Using a Release
+### Installation using a Release
 
 SynergyStorm is available as either a standalone Python Script or a binary for unix-like systems.
 Just download either from the latest release and enjoy!
-(make sure to install dependencies)
+(just make sure to install dependencies)
 
 ### Installing from Cloned Repo
 
@@ -36,7 +36,7 @@ pip install -r requirements.txt
 ```bash
 sudo cp ./dist/synergystorm/synergystorm /usr/bin
 ```
-**...or use `install.sh`**
+**...or use `install.sh`** (this method will always emulate all installation steps)
 ```bash
 chmod +x ./install.sh && ./install.sh
 ```
