@@ -82,4 +82,4 @@ This script is for educational purposes only. Use it responsibly and do not viol
 
 ## Support
 
-For any issues or queries, please [open an issue](https://github.com/sudo-matcha/synergystorm/issues) on GitHub. Contributions are welcome!
+For any issues or queries, please [open an issue](https://github.com/sudo-matcha/synergystorm/issues). Contributions are welcome!
