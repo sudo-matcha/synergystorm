@@ -12,7 +12,7 @@ SynergyStorm is available as either a standalone Python Script or a binary for u
 Just download either from the latest release and enjoy!
 (make sure to install dependencies)
 
-### Installing from Clone
+### Installing from Cloned Repo
 
 1. **Clone the Repository:**
 
