@@ -1,3 +1,8 @@
+# This repo is no more
+As of Jul 26th 2024, SynergyStorm will no longer be maintained by its author.
+But, don't cry just yet. A refreshed reboot of this relatively regal repo will be up soon, so stay tuned!
+
+
 # SynergyStorm
 
 ![SynergyStorm Logo](./synergystorm_logo_banner.png)
